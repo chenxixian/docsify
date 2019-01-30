@@ -9,18 +9,28 @@
   <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
 </head>
 <body>
-  <div id="app">您要的页面，服务器正在玩命加载中......</div>
 
-<script>
-  window.$docsify = {
-    loadSidebar: true
-        alias: {
-      '/.*/_sidebar.md': '/_sidebar.md'
-    }
-    subMaxLevel: 2
-  }
-</script>
-<script src="//unpkg.com/docsify"></script>
+ <div id="app">您要的页面，服务器正在玩命加载中......</div>
+ <script>
+   window.$docsify = {
+     name: 'docsify',
+     loadSidebar: true,
+     subMaxLevel: 4,
+     markdown: {
+        smartypants: true,
+      },
+     pagination: {
+       previousText: '上一章节',
+       nextText: '下一章节',
+     }
+   }
+ </script>
 
+ <!-- docsify -->
+ <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+
+ <!-- plugins -->
+ <script src="//unpkg.com/docsify/lib/plugins/zoom-image.min.js"></script>
+ <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
 </body>
 </html>
